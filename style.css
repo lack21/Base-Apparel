@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.main {
+  display: flex;
+  min-height: 100vh;
+}
+.main .content {
+  width: 60%;
+  background-image: url(images/bg-pattern-desktop.svg);
+  background-size: cover;
+  padding: 3rem 5rem 5rem 10rem;
+}
+.main .content .logo {
+  display: block;
+  margin-bottom: 7.5rem;
+}
+.main .content .title {
+  font-size: 4rem;
+  color: hsl(0, 6%, 24%);
+  font-weight: 600;
+  letter-spacing: 1rem;
+}
+.main .content .title span {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+.main .content .text {
+  max-width: 500px;
+  line-height: 1.75rem;
+  color: hsl(0, 36%, 70%);
+  padding: 1rem 0 2.5rem;
+}
+.main .content .form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  height: 54px;
+  border: 1px solid hsl(0, 36%, 70%);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+.main .content .form input {
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  border-radius: 2rem 0 0 2rem;
+  -webkit-border-radius: 2rem 0 0 2rem;
+  -moz-border-radius: 2rem 0 0 2rem;
+  -ms-border-radius: 2rem 0 0 2rem;
+  -o-border-radius: 2rem 0 0 2rem;
+  border: none;
+  background-color: transparent;
+  color: hsl(0, 36%, 70%);
+  font-size: 1rem;
+  outline: none;
+}
+.main .content .form .btn {
+  padding: 1rem 3rem;
+  height: 100%;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border: none;
+  cursor: pointer;
+}
+.main .content .form .btn:hover {
+  background-image: linear-gradient(135deg, hsl(0, 50%, 95%), hsl(0, 100%, 90%));
+}
+.main .image {
+  width: 40%;
+  background-image: url(images/hero-desktop.jpg);
+  background-size: cover;
+}
+
+@media screen and (max-width: 1100px) {
+  .main .content {
+    padding-left: 5%;
+  }
+}
+@media screen and (max-width: 868px) {
+  .main {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .main .image {
+    width: 100%;
+    height: min(450px, 65vw);
+    background-image: url(images/hero-mobile.jpg);
+  }
+  .main .content {
+    width: 100%;
+    padding: 2.5rem 5% 3.5rem;
+    text-align: center;
+  }
+  .main .content .title {
+    font-size: 3rem;
+  }
+  .main .content .form,
+  .main .content .text {
+    margin: auto;
+  }
+}/*# sourceMappingURL=style.css.map */
